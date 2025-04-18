@@ -1,0 +1,931 @@
+.navbars{
+    background-color: black;
+    color: white;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.special-img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+.navItem{
+    color: white;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-color: red;
+    padding: 8px;
+    position: relative;
+    z-index: 1;
+}
+.special-img>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.special-img > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+    text-align: center;
+    text-shadow: 0px 0px 5px white;
+    letter-spacing: 0.5rem;
+}
+.special-img:hover > p {
+    opacity: 1;
+}
+.special-img::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+    background-color: black;
+    opacity: 0;
+}
+.special-img:hover::before{
+    opacity: 0.6;
+}
+
+.brand-story{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    height: 100%;
+    padding: 25%;
+
+}
+.bg-1 {
+    background-image: url('./bg-1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.brand-story > h3 {
+    color: gold;
+    font-style: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.brand-story > h5 {
+
+
+
+
+
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    border-bottom-style: solid;
+    border-bottom-color: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.brand-story > p {
+    color: white;
+    font-size: 1.4rem;
+    text-shadow: 2px 5px 15px;
+
+}
+
+
+
+.brand-story>button {
+    color: white;
+    width: 35%;
+    background-color: #dc9c55;
+    border-style: none;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: larger;
+    text-align: start;
+
+}
+
+.brand-story>button::before {
+    content: '⭢';
+    font-size: larger;
+    margin-left: 0px;
+    margin-right:10px ;
+    transition: all 0.5s;
+
+}
+
+.brand-story>button:hover:before {
+    margin-left: 45%;
+}
+
+.brand-story > button > span {
+    transition: all 0.1s;
+    display: inline;
+}
+.brand-story > button:hover  > span {
+    display: none;
+}
+
+
+
+
+
+
+
+.bg-attachment {
+    height: 50vh;
+    background-image: url(./fuji-mountain-kawaguchiko-lake-morning-autumn-seasons-fuji-mountain-yamanachi-japan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+
+
+
+    position: relative;
+}
+
+.bg-attachment > .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 2;
+}
+
+
+
+
+
+
+.bg-attachment > .box-mask {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: 1;
+    height: 100%;
+    background: linear-gradient(90deg, black,gray);
+}
+
+.ol {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+}
+.Card {
+    background-color: #212429;
+    
+    border-radius: 20px;
+}
+.Card-body>.box{
+    color: white;
+}
+.col-6{
+    color: whitesmoke;
+}
+.Card img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: bottom center;
+    background-color: transparent;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
+.Card-body{
+    padding: 20px;
+}
+
+.Card-body h3 {
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+}
+.price{
+    font-weight: 900;
+    color: red;
+    font-size: 1.5rem;
+
+}
+.price::before{
+    content: ' $ : ';
+    color: white;
+}
+.btn-gold{
+    background-color: #dc9c55;
+    color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: none;
+}
+.btn-gold:hover{
+    box-shadow: 0px 0px 10px white;
+}
+
+.reverse {
+    animation-direction: reverse;
+}
+
+.marquee .view {
+    overflow: hidden;
+    position: relative;
+
+}
+.marquee .img-container {
+    display: flex;
+    animation-name: marquee;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.marquee .img-container img {
+    width: 100%;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+    
+
+
+}
+.marquee .information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 100;
+}
+.marquee .information h1 {
+    letter-spacing: 1rem;
+    text-align: center;
+}
+.marquee .information p {
+    letter-spacing: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.marquee .information button {
+    background-color: #dc9c55;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+}
+.marquee .information  button:hover {
+    box-shadow: 0px 0px 10px white;
+}
+
+.marquee
+
+
+
+
+
+.google-map {
+    height: 100vh;
+    width: 100%;
+    color: azure;
+}
+
+
+
+
+
+
+.google-map .map-responsive > iframe{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.navItem::before{
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+    left: 0;
+}
+
+
+
+
+.footer{
+    padding: 1rem;
+    background-color: #212429;
+    color: whitesmoke;
+    text-align: center
+}
+.footer >title {
+    font-size: 1.5rem;
+    color: #dc9c55;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navItem:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navItem:hover::before {
+    width: 100%;
+    color: white;
+}
+
+
+
+.carousel-css{
+    display: flex;
+    overflow: hidden;
+}
+.carousel-item-css>img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
+}
+.carousel-item-css{
+    position: relative;
+    z-index: 1;
+    animation-name: carousel;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: xx-large;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+}
+.text > a{
+    color: white;
+    text-decoration: none;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 0px 30px rgb(121, 3, 115);
+    font-size: medium;
+    padding: 10px;
+}
+.carousel-item-css > .mask {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, black, gray);
+    opacity: 0.5;
+    z-index: 99;
+}
+
+
+
+@keyframes carousel {
+    0% {
+        transform: translate(-0vw, 0);
+    }
+    28% {
+        transform: translate(-0vw, 0);
+    }
+
+    33% {
+        transform: translate(-100vw, 0);
+    }
+
+    61% {
+        transform: translate(-100vw, 0);
+    }
+
+    66% {
+        transform: translate(-200vw, 0);
+    }
+
+    100% {
+        transform: translate(-200vw, 0);
+    }
+
+
+
+}

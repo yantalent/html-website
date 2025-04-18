@@ -484,7 +484,7 @@
 
 .brand-story>button {
     color: white;
-    width: 35%;
+    width: 40%;
     background-color: #dc9c55;
     border-style: none;
     border-radius: 15px;
@@ -508,6 +508,7 @@
 
 .brand-story>button:hover:before {
     margin-left: 45%;
+    /* transform: translateX(45%); */
 }
 
 .brand-story > button > span {
